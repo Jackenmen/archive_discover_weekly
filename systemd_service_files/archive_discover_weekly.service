@@ -1,0 +1,13 @@
+[Unit]
+Description=Archive Discover Weekly
+Wants=archive_discover_weekly.timer
+
+[Service]
+Type=oneshot
+ExecStart=$PYTHON "$PWD/archive_discover_weekly.py"
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=$PWD
+
+[Install]
+WantedBy=multi-user.target 

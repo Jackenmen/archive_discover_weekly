@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Archive Discover Weekly on each Monday at 8:00 (UTC)
+Requires=archive_discover_weekly.service
+
+[Timer]
+Unit=archive_discover_weekly.service
+OnCalendar=Mon *-*-* 08:00:00
+
+[Install]
+WantedBy=multi-user.target 
