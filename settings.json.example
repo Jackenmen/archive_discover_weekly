@@ -1,0 +1,23 @@
+{
+    "last_snapshot_id": "",
+    "client_id": "[PUT_YOUR_CLIENT_ID_HERE]",
+    "client_secret": "[PUT_YOUR_CLIENT_SECRET_HERE]",
+    "playlist_id": "[PUT_YOUR_PLAYLIST_ID_HERE]",
+    "token_data": {
+        "access_token": "",
+        "expires_at": 0
+    },
+    "refresh_token": "",
+    "integration_settings": {
+        "host": "localhost",
+        "port": 25,
+        "use_ssl": false,
+        "authentication_required": false,
+        "user": "",
+        "password": "",
+        "mail_from": "from@example.com",
+        "mail_to": "to@example.com",
+        "mail_subject_on_success": "",
+        "mail_subject_on_error": ""
+    }
+}

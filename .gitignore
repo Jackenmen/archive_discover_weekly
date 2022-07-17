@@ -5,4 +5,5 @@ venv/
 .venvs/
 venvs/
 
-/archive_discover_weekly.txt
+# settings file
+/settings.json
