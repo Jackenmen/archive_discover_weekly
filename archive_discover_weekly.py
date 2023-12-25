@@ -14,7 +14,7 @@ EMAIL_FROM = os.environ["EMAIL_FROM"]
 EMAIL_TO = os.environ["EMAIL_TO"]
 PLAYLIST_ID = os.environ["SPOTIFY_PLAYLIST_ID"]
 
-fields = "snapshot_id,tracks.items(track(album(name,external_urls.spotify),artists,name,external_urls.spotify,uri))"
+fields = "snapshot_id,tracks.items(track(uri,album(name,external_urls.spotify),artists,name,external_urls.spotify))"
 
 
 class PlaylistNotModified(Exception):
