@@ -11,7 +11,7 @@ import requests
 
 from .errors import PlaylistNotModified
 
-fields = "snapshot_id,tracks.items(track(album(name,external_urls.spotify),artists,name,external_urls.spotify,uri))"
+fields = "snapshot_id,tracks.items(track(uri,album(name,external_urls.spotify),artists,name,external_urls.spotify))"
 settings_file = Path(__file__).absolute().parent / "settings.json"
 
 
